@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en"></html>
 <!--
 IMPORTANT:
 Start from the previous Musical assignment project you've created on M2-D2
@@ -19,27 +20,244 @@ Make sure you check the documentation before creting anything custom.
 
 <head>
     <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="./assets/css/styles.css">
 
     <style>
-        /* PREVIOUS CODE */
+         body {
+            background: linear-gradient(45deg, rgb(84, 175, 81) 0%, rgb(27, 62, 216) 100%);
+            background-attachment: fixed;
+            color: white;
+        }
+
+        section {
+            min-height: 93vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+
+
+
+
+
+
+     .bg-Jumb {
+        position: absolute;
+        object-fit: cover;
+        z-index: -1;
+        opacity: 0.6;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+     }
+     #jumbo-Page{
+         animation: fade-in 4s 1s both ;
+     }
+
+ /* ex2 */
+ .bg-cardAlubm{
+    background-color: #28aa174d;
+ }
+ 
+
+
+.album-container {
+  text-align: center;
+  padding-bottom: 1em;
+  margin: 1em;
+}
+
+.album-container .card-body {
+  min-height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.album-container .card-body h4 {
+  margin-top: 0px;
+}
+
+.album-container img {
+  width: 100%;
+}
+
+.album-artist:after {
+  content: " • ";
+}
+
+.album-title {
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+  font-size: 1.3em;
+}
+        
+
+
+
+
     </style>
 </head>
 
 <body>
 
+<!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MusicWorld</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#fav-albums">Favourite Albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#best-album-ever">Best album ever</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+<!--END OF Nav Bar -->
+
+
+
+
     <!-- EXERCISE 1
         Create a Jumbotron section with a quick explanation / image of the website.
-        Make it appear with a fade-in animation effect when the page loads.
-    -->
+        Make it appear with a fade-in animation effect when the page loads. -->
+   
+    <section id="jumbo-page" class="position-relative" >
+        <img class="bg-Jumb" src="https://images.unsplash.com/photo-1557787163-1635e2efb160?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1952&q=80" alt="wallpaper">
+    <div class="container">
+        <div class="jumbotron bg-transparent">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi odio atque deleniti. <br> Autem corrupti dolore magni amet dolorem suscipit eos, neque porro et dignissimos debitis. Eveniet, asperiores? Iure, natus nostrum.</p>
+        
+    </div>
+      </div>
 
+    </section> -->
     <!-- EXERCISE 2
         Use a Bootstrap Card to contain every album in the favorite list you previously created.
-        Use the elements of a card bootstrap provides you with to display nicely the album informations such as: album title, artist, year, etc..
-    -->
+        Use the elements of a card bootstrap provides you with to display nicely the album informations such as: album title, artist, year, etc..  -->
+        <section id="fav-albums">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="album-container">
+                            <div class="card bg-cardAlubm ">
+                            <img" src="https://lh3.googleusercontent.com/proxy/mjaF2Do8hAByl3kOBN7zp0TBZoeidVjhKLeY3wjpVrlzpKCjy3XCnrp8MQZe9gfiscnUlinBuzctNvv8QMRlCGuCodRIgAj5PjxhLZeeFg58abmew8ap8FrF-j2yUyV6Pd5mS8D6W5uTctKTu8UTMGw" class="img-fluid">
+                            <h4 class="album-title">The idea of her</h4>
+                            <span class="album-artist">Ali Gate</span>
+                            <span class="album-genre">Rock</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="album-container">
+                            <div class="card bg-cardAlubm ">
+                            <img src="assets/end-of-aquarius.jpg" class="img-fluid">
+                            <h4 class="album-title">End of Aquarius</h4>
+                            <span class="album-artist">Droid Bishop</span>
 
-    <!-- EXERCISE 3
+                            <span class="album-genre">Synthwave</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="album-container">
+                            <div class="card bg-cardAlubm ">
+                            <img src="assets/II.jpeg" class="img-fluid">
+                            <h4 class="album-title">Crystal Castles II</h4>
+                            <span class="album-artist">Crystal Castles</span>
+
+                            <span class="album-genre">Power Electronics</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="album-container">
+                            <div class="card bg-cardAlubm ">
+                            <img src="assets//it-takes-a-thief.jpeg" class="img-fluid">
+                            <h4 class="album-title">It Takes A Thief</h4>
+                            <span class="album-artist">Thievery Corporation</span>
+                            <span class="album-genre">Acid Jazz</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="album-container">
+                            <div class="card bg-cardAlubm ">
+                            <img src="assets/black-holes-and-revelations.jpg" class="img-fluid">
+                            <h4 class="album-title">Black Holes and Revelations</h4>
+                            <span class="album-artist">Muse</span>
+                            <span class="album-genre">Rock</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="album-container">
+                            <div class="card bg-cardAlubm ">
+                            <img src="assets/end-of-aquarius.jpg" class="img-fluid">
+                            <h4 class="album-title">End of Aquarius</h4>
+                            <span class="album-artist">Droid Bishop</span>
+
+                            <span class="album-genre">Synthwave</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="album-container">
+                            <div class="card bg-cardAlubm ">
+                            <img src="assets/II.jpeg" class="img-fluid">
+                            <h4 class="album-title">Crystal Castles II</h4>
+                            <span class="album-artist">Crystal Castles</span>
+
+                            <span class="album-genre">Power Electronics</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="album-container">
+                            <div class="card bg-cardAlubm ">
+                            <img src="assets//it-takes-a-thief.jpeg" class="img-fluid">
+                            <h4 class="album-title">It Takes A Thief</h4>
+                            <span class="album-artist">Thievery Corporation</span>
+                            <span class="album-genre">Acid Jazz</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+
+
+  <!--   EXERCISE 3
         Foreach album in the favorite list, place a badge on the top-left corner of the album with the genre of the music
     -->
+
+
+
+
 
     <!-- EXERCISE 4
         Create a new section with an album tracklist inside a Bootstrap table.
@@ -48,6 +266,27 @@ Make sure you check the documentation before creting anything custom.
         There should be a column for the track order number, one for the title and one for the track duration.
         (If you want, you can also add extra columns)
     -->
+    <hr style="color: rgb(241, 12, 12);">
+
+    <section id="best-album-ever">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img src="assets/la-revancha-del-tango.jpg" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="d-flex flex-column justify-content-center h-100">
+                        <h4>Gotan Project - La Revancha Del Tango</h4>
+                        <div>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- EXERCISE 5
         Add a DELETE bootstrap button at the end of each row of the tracklist. 
